@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto Tenis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            color: #007bff;
+        }
+        .add-to-cart {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>tenis blancos con rayas negras</h2>
+        <img src="https://i.pinimg.com/736x/e3/66/c6/e366c6a2fb925c4638d1d99a069401a8.jpg" alt="Tenis Deportivos" style="width: 100%; border-radius: 10px;">
+        <p>Precio: $625</p>
+        <div class="add-to-cart" onclick="addToCart('Tenis Deportivos', 50)">cancelar compra</div>
+<a href="menu fijo.html" class="button">Regresar al Inicio</a>
+    </div>
+
+    <script>
+        function addToCart(product, price) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ product, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Se cancelo la compra del producto');
+        }
+    </script>
+</body>
+</html>

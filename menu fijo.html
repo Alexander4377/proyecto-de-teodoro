@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Fijo con Slider de Promociones</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    /* Estilos para el menú */
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #6c5ce7; /* Color de fondo morado */
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    }
+
+    .menu a {
+      color: #fff; /* Texto blanco */
+      text-decoration: none;
+      padding: 0 20px; /* Espaciado de los enlaces */
+      font-size: 18px; /* Tamaño de fuente */
+      transition: all 0.3s ease; /* Transición suave */
+    }
+
+    .menu a:hover {
+      background-color: #4834d4; /* Cambio de color al pasar el ratón */
+    }
+
+    /* Estilos para el slider */
+    .swiper-container {
+      width: 100%;
+      height: 300px; /* Altura del slider */
+      margin-top: 50px; /* Espaciado desde el menú */
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    /* Estilo para el fondo de la página */
+    body {
+      background-color: #f9f9f9; /* Color de fondo gris claro */
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <a href="file:///C:/Users/PC3/Downloads/Nueva%20carpeta%20(1)/registro%20de%20seccion.html">Registro de Inicio</a>
+    <a href="#">Tenis de hombre</a>
+    <a href="#">Tenis de mujer</a>
+    <a href="#">Iformacion para que sepas quienes somos</a>
+  </div>
+<h1 style="text-align: center; margin-top: 100px;">TENIS EN PROMOCION</h1>
+  <!-- Slider de promociones -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="promocion1.html"><img src="https://i.pinimg.com/736x/e3/66/c6/e366c6a2fb925c4638d1d99a069401a8.jpg"  alt="Promoción 1"></div>
+      <div class="swiper-slide"><a href="promocion2.html"><img src="data:image/jpeg;base64,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" alt="Promoción 3"></div>
+      <div class="swiper-slide"><a href="promocion3.html"><img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5d932d9db6634cbfbfdbafc6012a03fb_9366/Tenis_Midcity_Mid_Negro_IE4465_04_standard.jpg" alt="Promoción 3"></div>
+      <div class="swiper-slide"><a href="promocion4.html"><img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a9ee6ae23c77432ba091ad2101896494_9366/SEELEY_XT_Negro_GZ8568_04_standard.jpg" alt="Promoción 4"></div>
+      <div class="swiper-slide"><a href="promocion5.html"><img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5d306a25c30e4f6291bed1d1293d2aa6_9366/SL_72_RS_Negro_JI1282_04_standard.jpg" alt="Promoción 5"></div>
+      <div class="swiper-slide"><a href="promocion6.html"><img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7c33ed6cd4ac4411a0cfadc500ff0c62_9366/Tenis_adidas_Court_Low_Streetcheck_Cloudfoam_Negro_GW5489_04_standard.jpg" alt="Promoción 6"></div>
+      <div class="swiper-slide"><a href="promocion7.html"><img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7d72766d0bb4401a8d6bb528c172981d_9366/CAMPUS_00s_J_Azul_IH1320_04_standard.jpg" alt="Promoción 7"></div>
+      <div class="swiper-slide"><a href="promocion8.html"><img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/38ad37f312aa41ac943de08fc68d9cb4_9366/Tenis_LWST_Verde_IF8800_01_standard.jpg" alt="Promoción 8"></div>
+      <div class="swiper-slide"><a href="promocion9.html"><img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f0924c964ace43c78dd1ac5e00377f5e_9366/Tenis_Forum_Low_Blanco_FY7756_04_standard.jpg" alt="Promoción 9"></div>
+      <div class="swiper-slide"><a href="promocion10.html"><img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b886921346874ac69d54e2d891b443e0_9366/Tenis_Forum_Bold_adidas_Originals_x_Hello_Kitty_and_Friends_Blanco_IF1229_04_standard.jpg" alt="Promoción 10"></div>
+      <!-- Agregar más slides con imágenes -->
+    </div>
+    <!-- Agregar botones de navegación -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+<h1 style="text-align: center; margin-top: 100px;">Tenis a precio normal</h1>
+    <div class="TENIS ADI2000">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/658ac4f70f144c3ca036ae6f0116ec80_9366/Tenis_adi2000_Blanco_GV9544_04_standard.jpg" alt="TENIS ADI2000"width="500" height="500"/>
+            <h2>TENIS ADI2000</h2>
+            <p>Muestra tu lado más rebelde con los tenis adi2000, inspirados en la era audaz de principios de los 2000. Con un ADN de skate y una paleta de colores versátiles, estos tenis adidas fueron diseñados pensando en tu estilo único. El diseño actualizado de las 3 Franjas aporta un toque divertido, mientras que el exterior de piel y la suela de caucho se encargan de brindar comodidad.
+
+Producto hecho parcialmente con contenido reciclado generado a partir de desechos de producción, tales como recortes de tela y desechos domésticos posconsumo, para evitar un mayor impacto ambiental al producir contenido virgen.</p>
+            <p>Precio: $2,399</p>
+            <button> <a href="carritomenu1.html">Añadir al carrito </a> </button>
+        </div>
+        <div class="TENIS SUPERSTAR">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7e1753cc9ca04374a0a178cc74450318_9366/Tenis_Superstar_Negro_ID4687_01_standard.jpg" alt="TENIS SUPERSTAR"width="500" height="500"/>
+            <h2>TENIS SUPERSTAR</h2>
+            <p>Impulsados por su estatus clásico, los tenis adidas Superstar se inspiran en el mundo moderno para llevar su historia al siguiente nivel. Aunque los elementos centrales desde la punta de caucho con relieve hasta las 3 Rayas permanecen, este par agrega detalles de denim y costuras de ojal para una interpretación moderna inspirada en los jeans. Un forro interno en contraste y detalles brillantes le ponen el toque final al look.</p>
+            <p>Precio: $2,199</p>
+            <button> <a href="carritomenu2.html">Añadir al carrito </a> </button>
+        </div>
+        <div class="TENIS RESPONSE">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/59615cbe6bd54a90b11c8adb6e233dd4_9366/Tenis_Response_Blanco_IE9583_01_standard.jpg" alt="TENIS RESPONSE"width="500" height="500"/>
+            <h2>TENIS RESPONSE</h2>
+            <p>Los tenis adidas Response son un llamado a la comodidad. Los colores realzan el look mientras que el exterior de lona con revestimientos de gamuza le imprime una perspectiva. fresca al ADN vintage del running. La mediasuela gruesa y las capas superpuestas potencian su estilo con un toque sofisticado que te permite combinarla con tus looks favoritos.</p>
+            <p>Precio: $3,199</p>
+            <button> <a href="carritomenu3.html">Añadir al carrito </a> </button>
+        </div>
+        <div class="TENIS RESPONSE CL W">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0b86c11c6f494cb485805e4659fcd81f_9366/RESPONSE_CL_W_Blanco_IE9868_04_standard.jpg" alt="TENIS RESPONSE CL W"width="500" height="500"/>
+            <h2>TENIS RESPONSE CL W</h2>
+            <p>Response Cl W es un nuevo producto para Unisex de adidas. Te invitamos a ver las imágenes para apreciar más detalles desde diferentes ángulos. Si ya conoces Response Cl W puedes dejar una reseña abajo; siempre nos encanta conocer tu opinión.
+
+Aún estamos trabajando para tener más información de Response Cl W, así que vuelva pronto. Mientras tanto, toma nota del número de artículo que identifica el producto IE9868 para que lo puedas encontrar de nuevo fácilmente. Está categorizado como: Zapatillas y Tenis</p>
+            <p>Precio: $3,199</p>
+            <button> <a href="carritomenu4.html">Añadir al carrito </a> </button>
+        </div>
+        <div class="TENIS SUPERSTAR BONEGA 2B">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0fb9421c38eb45cdb6a9022cc66fcae0_9366/Tenis_Superstar_Bonega_2B_Blanco_ID5800_04_standard.jpg" alt="TENIS SUPERSTAR BONEGA 2B"width="500" height="500"/>
+            <h2>TENIS SUPERSTAR BONEGA 2B</h2>
+            <p>Los tenis adidas Superstar Bonega 2B celebran la expresión individual. Manteniéndose fieles a sus raíces, estos tenis conservan la icónica punta de caucho con relieve, pero actualizan el look con proporciones modificadas. Ranuras y líneas resaltan el diseño adaptado de la mediasuela tipo plataforma. La plantilla de espuma viscoelástica te garantiza un ajuste cómodo.
+
+Este producto está hecho con materiales naturales y renovables como parte de nuestro compromiso con eliminar los recursos finitos de nuestros diseños y ayudar a ponerle fin a los residuos plásticos.</p>
+            <p>Precio: $2,799</p>
+            <button> <a href="file:///C:/Users/PC6/Downloads/Nueva%20carpeta%20(2)/CARRITO%20DE%20COMPRAS.HTML">Añadir al carrito </a> </button>
+        </div>
+        <div class="TENIS DE PLATAFORMA BRAVADA 2.0">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a23ae941f35e4ac1a24e8a04893821e8_9366/Tenis_de_Plataforma_Bravada_2.0_Blanco_ID5576_04_standard.jpg" alt="TENIS DE PLATAFORMA BRAVADA 2.0"width="500" height="500"/>
+            <h2>TENIS DE PLATAFORMA BRAVADA 2.0</h2>
+            <p>Los tenis de lona tienen una esencia clásica y este diseño de adidas la aprovecha al máximo. La suela gruesa con plataforma eleva tu look con actitud y audacia, pero nunca a expensas de la comodidad. La amortiguación Cloudfoam te brinda amortiguación durante todo el día para mayor comodidad, y la suela de caucho brinda un agarre sólido que completa el look informal y moderno.
+
+Trabajamos con Better Cotton para mejorar el cultivo del algodón a nivel mundial. Better Cotton hace que la producción mundial de algodón sea mejor para las personas que lo producen, mejor para el medio ambiente en el que crece y mejor para el futuro del sector. </p>
+            <p>Precio: $1,399</p>
+            <button> <a href="file:///C:/Users/PC6/Downloads/Nueva%20carpeta%20(2)/CARRITO%20DE%20COMPRAS.HTML">Añadir al carrito </a> </button>
+        </div>
+        <div class="TENIS GRAND COURT PLATFORMA">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/45776607725e4dc6b87135acf0583cfa_9366/Tenis_adidas_Grand_Court_Platforma_Negro_IE1102_04_standard.jpg" alt="TENIS GRAND COURT PLATFORMA"width="500" height="500"/>
+            <h2>TENIS GRAND COURT PLATFORMA</h2>
+            <p>Con estos tenis adidas prácticamente puedes sentir la energía de un partido de tenis. Tienen sus raíces en el estilo deportivo de los 70, pero no necesitas estar en la cancha para lucirlos. La suavidad de la plataforma Cloudfoam eleva la parte superior sintética y aterriza en cada paso con comodidad total e innegable.</p>
+            <p>Precio: $1,699</p>
+            <button> <a href="file:///C:/Users/PC6/Downloads/Nueva%20carpeta%20(2)/CARRITO%20DE%20COMPRAS.HTML">Añadir al carrito </a> </button>
+        </div>
+        <div class="TENIS GAZELLE BOLD">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5e1ce4527e514a5eab19af4600703879_9366/Tenis_Gazelle_Bold_Negro_HQ6912_15_hover_standard.jpg" alt="TENIS GAZELLE BOLD"width="500" height="500"/>
+            <h2>TENIS GAZELLE BOLD</h2>
+            <p>Gazelle Bold W es un nuevo producto para Unisex de adidas. Te invitamos a ver las imágenes para apreciar más detalles desde diferentes ángulos. Si ya conoces Gazelle Bold W puedes dejar una reseña abajo; siempre nos encanta conocer tu opinión.
+
+Aún estamos trabajando para tener más información de Gazelle Bold W, así que vuelva pronto. Mientras tanto, toma nota del número de artículo que identifica el producto HQ6912 para que lo puedas encontrar de nuevo fácilmente. Está categorizado como: Zapatillas y Tenis</p>
+            <p>Precio: $2,399</p>
+            <button> <a href="file:///C:/Users/PC6/Downloads/Nueva%20carpeta%20(2)/CARRITO%20DE%20COMPRAS.HTML">Añadir al carrito </a> </button>
+        </div>
+         <div class="TENIS SUPERSTAR XLG">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/27d8697555ad4b1db8e3e4696a4797b5_9366/Tenis_Superstar_XLG_Blanco_IF8068_04_standard.jpg" alt="TENIS SUPERSTAR XLG"width="500" height="500"/>
+            <h2>TENIS SUPERSTAR XLG</h2>
+            <p>Cuando pensabas que los tenis adidas Superstar no podían ser más atrevidos, este par amplifica el clásico modelo de los 70 para adaptarlo a la moda actual. Las proporciones ampliadas y el diseño llamativo se hacen patentes con las emblemáticas 3 Franjas dentadas. El exterior de piel se mantiene fiel a sus raíces vintage a la vez que reimagina la silueta para mantener un estilo fresco. Camina con confianza gracias a la icónica puntera.</p>
+            <p>Precio: $2,599</p>
+            <button> <a href="file:///C:/Users/PC6/Downloads/Nueva%20carpeta%20(2)/CARRITO%20DE%20COMPRAS.HTML">Añadir al carrito </a> </button>
+        </div>
+        <div class="TENIS RUM 84 HI">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/aa0ffa8e71024756b679af4600efafae_9366/Tenis_Forum_84_Hi_Blanco_HQ6884_04_standard.jpg" alt="TENIS RUM 84 HI"width="500" height="500"/>
+            <h2>TENIS RUM 84 HI</h2>
+            <p>Renueva tu look con esta versión actualizada de los icónicos tenis adidas Forum. La piel blanca sobre malla blanca le da forma a una vibra limpia y minimalista, acentuada por un adorno de encaje de macramé que agrega el look de arte artesanal. El cuello alto te brinda soporte adicional, y la tira ajustable de cierre por contacto en el tobillo mantiene cada paso cómodo. La suela tipo cupsole de caucho resiste al desgaste y te acompaña en tu día a día.</p>
+            <p>Precio: $3,299</p>
+            <button> <a href="file:///C:/Users/PC6/Downloads/Nueva%20carpeta%20(2)/CARRITO%20DE%20COMPRAS.HTML">Añadir al carrito </a> </button>
+        </div>
+<footer>
+        <p>Derechos de autor © 2024 Tienda Aideas. Todos los derechos reservados.</p>
+    </footer>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 4000, // Cambiar de slide cada 4 segundos
+      },
+    });
+  </script>
+</body>
+</html>

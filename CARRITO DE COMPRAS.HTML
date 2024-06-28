@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Aideas</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <style>
+        /* Estilos CSS básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        background-color: #00FFFF;
+        }
+        header {
+            position: relative;
+            background-color: #2196f3;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .slick-slider {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .slick-slider img {
+            max-width: 100%;
+        }
+        .slick-dots {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .slick-dots li {
+            display: inline-block;
+            margin: 0 5px;
+        }
+        .slick-dots li button {
+            font-size: 10px;
+            padding: 5px;
+            border: none;
+            border-radius: 50%;
+            background-color: #fff;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .slick-dots li.slick-active button {
+            background-color: #333;
+            color: #fff;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .product {
+            float: left;
+            width: 30%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+	.caja-de-botones {
+ margin: 0;
+            padding: 0;
+	background-color: #7CFC00;
+	}
+    </style>
+</head>
+<body>
+    <header>
+       
+        <h1>GRACIAS POR COMPRAR 
+CON TIENDA AIDEAS</h1>
+    </header>
+    <nav>
+        <ul class:"caja-de-botones">
+
+            <li><a href="">Inicio</a></li>
+        </ul>
+    </nav>
+   
+    <footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p>Derechos de autor © 2024 Tienda Aideas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slick-slider').slick({
+                autoplay: true,
+                autoplaySpeed: 4000,
+                dots: true,
+                arrows: false,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+</body>
+</html>
+

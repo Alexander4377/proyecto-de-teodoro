@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Fijo</title>
+  <style>
+    /* Estilos para el menú */
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #6c5ce7; /* Color de fondo morado */
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    }
+
+    .menu a {
+      color: #fff; /* Texto blanco */
+      text-decoration: none;
+      padding: 0 20px; /* Espaciado de los enlaces */
+      font-size: 18px; /* Tamaño de fuente */
+      transition: all 0.3s ease; /* Transición suave */
+    }
+
+    .menu a:hover {
+      background-color: #4834d4; /* Cambio de color al pasar el ratón */
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <a href="menu fijo.html">Inicio</a>
+    <a href="quienes somos con video.html">Quienes somos</a>
+  </div>
+
+  <!-- Contenido de la página -->
+  <h1 style="text-align: center; margin-top: 100px;">TENIS DE OFERTA NUMERO2l</h1>
+  <div class="container">
+    <div class="tenis">
+        <img src="data:image/jpeg;base64,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" alt="tenis blancos con rayas negras" width="500" height="400">
+        <h2>tenis negos con rayas blancas</h2>
+        <p>Una plataforma para tus sueños. Una lona para escribir tu propia historia. Puede que parezca mucho para un calzado, pero estos tenis adidas pueden soportarlo. Con una silueta de corte bajo inspirada en el legado de adidas, además de una mediasuela y plantilla ultracómoda, están listos para acompañarte adonde quieras ir y tienen Con una amortiguación superior la tecnología adidas hace que el impacto lo reciban tus tenis y no tus pies. Ofrecen flexibilidad en los lugares correctos y la estabilidad que necesitan los pies en diferentes caminatas.</p>
+        <p>precio normal:$983</p>
+        <p>Precio de rebaja: $779</p>
+        <button> <a href="carritopromocion2.html">Añadir al carrito </a> </button>
+    </div>
+
+    
+    <!-- Agrega más tenis aquí -->
+
+</div>
+</body>
+</html>
